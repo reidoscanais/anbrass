@@ -1,74 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-   <head>
-      <title>PLAYER RDC</title>
-      <meta charset="utf-8">
-      <meta name="robots" content="noindex, nofollow">
-      <meta name="referrer" content="no-referrer">
-      <link rel="stylesheet" type="text/css" href="https://player.reidoscanais.com/assets/css/player-v3.1.min.css">
-      <script src="//player.reidoscanais.com/assets/vendor/jwplayer/jwplayer.latest.js"></script>
-      <script type="text/javascript" src="//player.reidoscanais.com/assets/js/player-v3.4.min.js"></script>
-      <script>
-         jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-      </script>
-      <style type="text/css">
-         /* Aparencia Geral */
-         body {
-         margin: 0;
-         padding: 0;
-         overflow: hidden;
-         }
-         #player {
-         position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         height: 100%;
-         width: 100%;
-         overflow: hidden;
-         }
-         #player iframe {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         }
-      </style>
-      <link rel="stylesheet" href="//player.reidoscanais.com/assets/css/skin/jwplayer/netflix.css">
+<head>
+    <title>PLAYER RDC</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <link rel="stylesheet" type="text/css" href="https://player.reidoscanais.com/assets/css/player-v3.1.min.css">
+    <link rel="stylesheet" href="//player.reidoscanais.com/assets/css/skin/jwplayer/netflix.css">
+    <style type="text/css">
+        /* Aparencia Geral */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="//player.reidoscanais.com/assets/vendor/jwplayer/jwplayer.latest.js"></script>
+    <script type="text/javascript" src="//player.reidoscanais.com/assets/js/player-v3.4.min.js"></script>
+    <script>
+        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+            var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
+        var id = getParameterByName('id');
+        if (id == "#") {
+            alert('Voltar a página anterior');
+        }
+        var getLang = getParameterByName('lang');
+    </script>
+    <div id="player"></div>
+    <script src="//reidoscanais.com/embed/dtv.js"></script>
+    <script type='text/javascript' src='//darlingfrightenunit.com/79/43/c7/7943c785d1eb8eaf51fecaf514249a90.js'></script>
 
-      <!-- Histats.com  START  (aync)-->
-      <script type="text/javascript">var _Hasync= _Hasync|| [];
-         _Hasync.push(['Histats.start', '1,4772717,4,0,0,0,00010000']);
-         _Hasync.push(['Histats.fasi', '1']);
-         _Hasync.push(['Histats.track_hits', '']);
-         (function() {
-         var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-         hs.src = ('//s10.histats.com/js15_as.js');
-         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-         })();
-      </script>
-      <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4772717&101" alt="stats count" border="0"></a></noscript>
-      <!-- Histats.com  END  -->
-   </head>
-   <body>
-      <script type="text/javascript">
-         function getParameterByName(name) {
-             name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-             var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-             results = regex.exec(location.search);
-             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-         }
-         
-         var id = getParameterByName('id');
-         if (id == "#") {alert('Voltar a página anterior');}
-         var getLang = getParameterByName('lang');
-         
-      </script>
-      <div id="player"></div>
-      <script src="//reidoscanais.com/embed/dtv.js"></script>
-      <script type='text/javascript' src='//darlingfrightenunit.com/79/43/c7/7943c785d1eb8eaf51fecaf514249a90.js'></script>
-   </body>
+    <!-- Histats.com START (async) -->
+    <script type="text/javascript">
+        var _Hasync = _Hasync || [];
+        _Hasync.push(['Histats.start', '1,4772717,4,0,0,0,00010000']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+            var hs = document.createElement('script');
+            hs.type = 'text/javascript';
+            hs.async = true;
+            hs.src = ('//s10.histats.com/js15_as.js');
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();
+    </script>
+    <noscript>
+        <a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4772717&101" alt="stats count" border="0"></a>
+    </noscript>
+    <!-- Histats.com END -->
+</body>
 </html>
